@@ -10,17 +10,15 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
+            <a href="#home" class="logo">STEVIN</a>
             <ul class="nav-links">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#nosotros">NOSOTROS</a></li>
                 <li><a href="#servicios">SERVICIOS</a></li>
-            </ul>
-            
-            <a href="#home" class="logo">STEVIN</a>
-            
-            <ul class="nav-links">
                 <li><a href="#maquinas">NUESTRAS MÁQUINAS</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+            <ul class="nav-links">
                 <li>
                     <div class="language-flags">
                         <div class="flag us"></div>
@@ -110,119 +108,95 @@
     </section>
 
     <!-- Services Section -->
-    <section id="servicios" class="services-section">
+    <section class="services-section" id="servicios">
         <div class="container">
             <div class="section-header">
-                <h1 class="section-title-services">Servicios</h1>
-                <p class="section-subtitle">Desarrollo de Producto, Moldes de Inyección y Dispositivos</p>
-                <p class="section-subtitle">Tenemos como objetivo el crecimiento sostenido de la empresa y el desarrollo profesional de sus colaboradores.</p>
+                <h2 class="section-title">Servicios</h2>
+                <p class="section-subtitle">
+                    Desarrollo de Producto, Moldes de Inyección y Dispositivos
+                </p>
+                <p class="section-subtitle">
+                    Tenemos como objetivo el crecimiento sostenido de la empresa y el desarrollo profesional de sus colaboradores.
+                </p>
             </div>
-
-            <div class="services-grid">
-                <!-- Process Section -->
-                <div class="process-section">
-                    <h2 class="process-title">SEGURIDAD Y RESULTADOS</h2>
-                    
-                    <div class="process-icons">
-                        <div class="process-icon">🛡️</div>
-                        <div class="process-icon">📊</div>
-                        <div class="process-icon">📋</div>
-                        <div class="process-icon">🔍</div>
-                        <div class="process-icon">⚡</div>
+            <div class="services-cards-grid">
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Fabricación de moldes de inyección de plástico y Zamak</h3>
+                        <p class="service-card-description">
+                            Diseño y fabricación de moldes de alta precisión para inyección de plástico y Zamak, utilizando tecnología de vanguardia y materiales de primera calidad.
+                        </p>
                     </div>
-
-                    <p class="process-description">
-                        Para todo aquel cliente que busca una solución global a un producto totalmente terminado con base en 
-                        Plástico y Zamak, le ofrecemos la posibilidad de desarrollar su proyecto de modo integral. Una propuesta de 
-                        servicios completos que va desde la conceptualización hasta la producción en serie.
-                    </p>
+                    <div class="service-card-icon">
+                        <span class="span-icon"><img src="images/icon-services.png" alt="servicio 1" class="icon-image"></span>
+                    </div>
+                    <div class="service-card-gradient gradient-purple"></div>
                 </div>
 
-                <!-- Services List -->
-                <div class="services-list">
-                    <div class="service-item">
-                        <div class="service-header" onclick="toggleService(this)">
-                            <span class="service-title">Fabricación de moldes de inyección de plástico y Zamak</span>
-                            <div class="service-toggle">+</div>
-                        </div>
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7JUqGnzKtzmeH8F2xMKOKA2ZE4xIAF.png" alt="Imagen ilustrativa" class="service-image">
-                                Diseño y fabricación de moldes de alta precisión para inyección de plástico y Zamak, 
-                                utilizando tecnología de vanguardia y materiales de primera calidad.
-                            </div>
-                        </div>
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Inyección de plástico</h3>
+                        <p class="service-card-description">
+                            Servicio completo de inyección de plástico con control de calidad riguroso y capacidad de producción en serie para diversos sectores industriales.
+                        </p>
                     </div>
+                    <div class="service-card-icon">
+                        <span class="span-icon"><img src="images/icon-services2.png" alt="servicio 2" class="icon-image"></span>
+                    </div>
+                    <div class="service-card-gradient gradient-blue"></div>
+                </div>
 
-                    <div class="service-item">
-                        <div class="service-header" onclick="toggleService(this)">
-                            <span class="service-title">Inyección de plástico</span>
-                            <div class="service-toggle">+</div>
-                        </div>
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7JUqGnzKtzmeH8F2xMKOKA2ZE4xIAF.png" alt="Imagen ilustrativa" class="service-image">
-                                Servicio completo de inyección de plástico con control de calidad riguroso y 
-                                capacidad de producción en serie para diversos sectores industriales.
-                            </div>
-                        </div>
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Cambios de ingeniería</h3>
+                        <p class="service-card-description">
+                            Modificaciones y mejoras en diseños existentes, optimización de procesos y adaptación de moldes para nuevos requerimientos del cliente.
+                        </p>
                     </div>
+                    <div class="service-card-icon">
+                        <span class="span-icon"><img src="images/icon-services3.png" alt="servicio 3" class="icon-image"></span>
+                    </div>
+                    <div class="service-card-gradient gradient-teal"></div>
+                </div>
 
-                    <div class="service-item">
-                        <div class="service-header" onclick="toggleService(this)">
-                            <span class="service-title">Cambios de ingeniería</span>
-                            <div class="service-toggle">+</div>
-                        </div>
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7JUqGnzKtzmeH8F2xMKOKA2ZE4xIAF.png" alt="Imagen ilustrativa" class="service-image">
-                                Modificaciones y mejoras en diseños existentes, optimización de procesos y 
-                                adaptación de moldes para nuevos requerimientos del cliente.
-                            </div>
-                        </div>
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Mantenimiento preventivo y correctivo</h3>
+                        <p class="service-card-description">
+                            Programas de mantenimiento especializado para moldes y equipos, garantizando la máxima vida útil y rendimiento óptimo de sus herramientas.
+                        </p>
                     </div>
+                    <div class="service-card-icon">
+                        <span class="span-icon"><img src="images/icon-services4.png" alt="servicio 4" class="icon-image"></span>
+                    </div>
+                    <div class="service-card-gradient gradient-pink"></div>
+                </div>
 
-                    <div class="service-item">
-                        <div class="service-header" onclick="toggleService(this)">
-                            <span class="service-title">Mantenimiento preventivo y correctivo</span>
-                            <div class="service-toggle">+</div>
-                        </div>
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7JUqGnzKtzmeH8F2xMKOKA2ZE4xIAF.png" alt="Imagen ilustrativa" class="service-image">
-                                Programas de mantenimiento especializado para moldes y equipos, garantizando 
-                                la máxima vida útil y rendimiento óptimo de sus herramientas.
-                            </div>
-                        </div>
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Fabricación de dispositivos y bases para localizadores y ubicación</h3>
+                        <p class="service-card-description">
+                            Desarrollo de dispositivos especializados y bases de precisión para sistemas de localización y posicionamiento en procesos industriales.
+                        </p>
                     </div>
+                    <div class="service-card-icon">
+                        <span class="span-icon"><img src="images/icon-services5.png" alt="servicio 5" class="icon-image"></span>
+                        
+                    </div>
+                    <div class="service-card-gradient gradient-orange"></div>
+                </div>
 
-                    <div class="service-item">
-                        <div class="service-header" onclick="toggleService(this)">
-                            <span class="service-title">Fabricación de dispositivos y bases para localizadores y ubicación</span>
-                            <div class="service-toggle">+</div>
-                        </div>
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7JUqGnzKtzmeH8F2xMKOKA2ZE4xIAF.png" alt="Imagen ilustrativa" class="service-image">
-                                Desarrollo de dispositivos especializados y bases de precisión para sistemas 
-                                de localización y posicionamiento en procesos industriales.
-                            </div>
-                        </div>
+                <div class="service-card">
+                    <div class="service-card-content">
+                        <h3 class="service-card-title">Maquila de micromoldeadora de plasma y fundición TIG</h3>
+                        <p class="service-card-description">
+                            Servicios especializados de micromoldeado con tecnología de plasma y procesos de fundición TIG para aplicaciones de alta precisión.
+                        </p>
                     </div>
-
-                    <div class="service-item">
-                        <div class="service-header" onclick="toggleService(this)">
-                            <span class="service-title">Maquila de micromoldeadora de plasma y fundición TIG</span>
-                            <div class="service-toggle">+</div>
-                        </div>
-                        <div class="service-content">
-                            <div class="service-content-inner">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7JUqGnzKtzmeH8F2xMKOKA2ZE4xIAF.png" alt="Imagen ilustrativa" class="service-image">
-                                Servicios especializados de micromoldeado con tecnología de plasma y 
-                                procesos de fundición TIG para aplicaciones de alta precisión.
-                            </div>
-                        </div>
+                    <div class="service-card-icon">
+                        <span class="span-icon"><img src="images/icon-services6.png" alt="servicio 6" class="icon-image"></span>
                     </div>
+                    <div class="service-card-gradient gradient-indigo"></div>
                 </div>
             </div>
         </div>
