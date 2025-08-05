@@ -1636,7 +1636,7 @@ h1,h2,h3,h4,h5,h6{
 
     .service-card {
         padding: 20px 16px 16px;
-        min-height: 220px;
+        min-height: 280px;
     }
 
     .service-card-title {
@@ -1657,7 +1657,7 @@ h1,h2,h3,h4,h5,h6{
         width: 44px;
         height: 44px;
         font-size: 18px;
-        top: 100px;
+        top: 160px;
         right: 20px;
     }
 
