@@ -284,3 +284,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+// Close mobile menu when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+    const checkbox = document.getElementById('menu-toggle');
+    if (checkbox.checked) checkbox.checked = false;
+    });
+});
