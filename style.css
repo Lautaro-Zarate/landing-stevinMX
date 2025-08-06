@@ -68,20 +68,10 @@ h1,h2,h3,h4,h5,h6{
     color: var(--secondary-color);
 }
 
-.logo {
-    font-size: 16px;
-    font-weight: 600;
-    color: #1d1d1f;
-    text-decoration: none;
-    padding: 8px 16px;
-    border: 2px solid #1d1d1f;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-
-.logo:hover {
-    background-color: #1d1d1f;
-    color: white;
+.brand{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
 }
 
 .language-flags {
@@ -1617,8 +1607,11 @@ h1,h2,h3,h4,h5,h6{
 @media (max-width: 480px) {
     .nav-container {
         padding: 0 16px;
+        justify-content: flex-end;
     }
-
+    .brand{
+        margin-right: 190px;
+    }
     .menu-icon {
         display: block;
     }
