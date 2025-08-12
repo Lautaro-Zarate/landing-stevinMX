@@ -6,6 +6,18 @@
     <title data-translate="pageTitle">STEVIN - Moldes de Inyección de Plástico y Zamak</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/i18next@22.4.11/i18next.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function timestamp() {
+            var response = document.getElementById("g-recaptcha-response");
+            if (response == null || response.value.trim() === "") {
+            var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+            elems["ts"] = JSON.stringify(new Date().getTime());
+            document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+            }
+        }
+        setInterval(timestamp, 500);
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -328,7 +340,7 @@
                                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="DMG MORI NLX Machine">
                             </div>
                         </div>
-                        <!-- Slide 5 -->
+                        <!-- Slide 7 -->
                         <div class="carousel-slide">
                             <div class="machine-info">
                                 <h2 class="machine-name" data-translate="cncMachines">MAQUINAS CNC</h2>
@@ -337,7 +349,7 @@
                                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="CNC Machines">
                             </div>
                         </div>
-                        <!-- Slide 6 -->
+                        <!-- Slide 8 -->
                         <div class="carousel-slide">
                             <div class="machine-info">
                                 <h2 class="machine-name" data-translate="injectionMachines">MAQUINAS DE INYECCION</h2>
@@ -346,7 +358,7 @@
                                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="Injection Machines">
                             </div>
                         </div>
-                        <!-- Slide 7 -->
+                        <!-- Slide 9 -->
                         <div class="carousel-slide">
                             <div class="machine-info">
                                 <h2 class="machine-name" data-translate="opticalComparator">COMPARADOR OPTICO</h2>
