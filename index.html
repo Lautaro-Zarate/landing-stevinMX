@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEVIN - Moldes de Inyección de Plástico y Zamak</title>
+    <title data-translate="pageTitle">STEVIN - Moldes de Inyección de Plástico y Zamak</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/i18next@22.4.11/i18next.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -16,11 +17,11 @@
             <label for="menu-toggle" class="menu-icon"><img src="images/hamburger-icon.png" alt="menu hamburguesa" class="img-hamburguer"></label>
 
             <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#tecnologia">Tecnología</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio" data-translate="navHome">Inicio</a></li>
+            <li><a href="#nosotros" data-translate="navAbout">Nosotros</a></li>
+            <li><a href="#servicios" data-translate="navServices">Servicios</a></li>
+            <li><a href="#tecnologia" data-translate="navTechnology">Tecnología</a></li>
+            <li><a href="#contacto" data-translate="navContact">Contacto</a></li>
             </ul>
 
             <div class="language-flags">
@@ -31,12 +32,11 @@
         </div>
 </nav>
 
-
     <!-- Home Section -->
     <section id="inicio" class="hero-section">
         <div class="hero">
-            <h1 data-translate="title">Moldes de Inyección de Plástico y Zamak,
-                <br><span class="span-title">
+            <h1 data-translate="heroTitle">Moldes de Inyección de Plástico y Zamak,
+                <br><span class="span-title" data-translate="heroWelcome">
                 ¡Bienvenidos a STEVIN!
                 </span>
             </h1>
@@ -48,9 +48,9 @@
             </div>
             
             <aside class="services-preview">
-                <h2>Servicios</h2>
-                <p data-translate="description">Nos dedicamos a algo más que a la fabricación de moldes</p>
-                <p>Hacemos los proyectos realidad asumiendo siempre los retos que supone industrializar nuevos productos de Plástico y Zamak.</p>
+                <h2 data-translate="servicesTitle">Servicios</h2>
+                <p data-translate="servicesDescription1">Nos dedicamos a algo más que a la fabricación de moldes</p>
+                <p data-translate="servicesDescription2">Hacemos los proyectos realidad asumiendo siempre los retos que supone industrializar nuevos productos de Plástico y Zamak.</p>
             </aside>
         </main>
     </section>
@@ -59,13 +59,13 @@
     <section id="nosotros" class="about-section">
         <div class="container">
             <div class="section-header">
-                <h1 class="section-title">Nosotros</h1>
-                <p class="section-description">
+                <h1 class="section-title" data-translate="aboutTitle">Nosotros</h1>
+                <p class="section-description" data-translate="aboutDescription">
                     Establecida en el año 2001 por Randolph Mutz, STEVIN es una empresa que atiende las 
                     necesidades de diversos clientes en un amplio ramo de industrias como la automotriz, 
                     farmacéutica y productos para el hogar.
                 </p>
-                <div class="quote">
+                <div class="quote" data-translate="aboutQuote">
                     Crear moldes a la medida sigue siendo el compromiso que nos distingue
                 </div>
             </div>
@@ -73,8 +73,8 @@
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon">⚙️</div>
-                    <h3 class="card-title">MISIÓN</h3>
-                    <div class="card-content">
+                    <h3 class="card-title" data-translate="missionTitle">MISIÓN</h3>
+                    <div class="card-content" data-translate="missionContent">
                         Satisfacer las necesidades de nuestros clientes a través de la 
                         fabricación de moldes de inyección de plástico y Zamak, 
                         brindándoles excelente servicio y calidad.
@@ -83,8 +83,8 @@
 
                 <div class="card">
                     <div class="card-icon">🏆</div>
-                    <h3 class="card-title">VISIÓN</h3>
-                    <div class="card-content">
+                    <h3 class="card-title" data-translate="visionTitle">VISIÓN</h3>
+                    <div class="card-content" data-translate="visionContent">
                         Ser líderes en la fabricación de moldes de inyección de 
                         Plástico y Zamak, manteniéndonos siempre la mejor 
                         calidad y diferenciarnos por nuestra excelencia en el 
@@ -94,15 +94,15 @@
 
                 <div class="card">
                     <div class="card-icon">🧭</div>
-                    <h3 class="card-title">VALORES</h3>
+                    <h3 class="card-title" data-translate="valuesTitle">VALORES</h3>
                     <div class="card-content">
                         <ul>
-                            <li>Trabajo en Equipo</li>
-                            <li>Compromiso</li>
-                            <li>Honestidad</li>
-                            <li>Puntualidad</li>
-                            <li>Salud y Seguridad</li>
-                            <li>Responsabilidad con el medio ambiente</li>
+                            <li data-translate="value1">Trabajo en Equipo</li>
+                            <li data-translate="value2">Compromiso</li>
+                            <li data-translate="value3">Honestidad</li>
+                            <li data-translate="value4">Puntualidad</li>
+                            <li data-translate="value5">Salud y Seguridad</li>
+                            <li data-translate="value6">Responsabilidad con el medio ambiente</li>
                         </ul>
                     </div>
                 </div>
@@ -114,19 +114,19 @@
     <section class="services-section" id="servicios">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Servicios</h2>
-                <p class="section-subtitle">
+                <h2 class="section-title" data-translate="servicesMainTitle">Servicios</h2>
+                <p class="section-subtitle" data-translate="servicesSubtitle1">
                     Desarrollo de Producto, Moldes de Inyección y Dispositivos
                 </p>
-                <p class="section-subtitle">
+                <p class="section-subtitle" data-translate="servicesSubtitle2">
                     Tenemos como objetivo el crecimiento sostenido de la empresa y el desarrollo profesional de sus colaboradores.
                 </p>
             </div>
             <div class="services-cards-grid">
                 <div class="service-card">
                     <div class="service-card-content">
-                        <h3 class="service-card-title">Fabricación de moldes de inyección de plástico y Zamak</h3>
-                        <p class="service-card-description">
+                        <h3 class="service-card-title" data-translate="service1Title">Fabricación de moldes de inyección de plástico y Zamak</h3>
+                        <p class="service-card-description" data-translate="service1Description">
                             Diseño y fabricación de moldes de alta precisión para inyección de plástico y Zamak, utilizando tecnología de vanguardia y materiales de primera calidad.
                         </p>
                     </div>
@@ -138,8 +138,8 @@
 
                 <div class="service-card">
                     <div class="service-card-content">
-                        <h3 class="service-card-title">Inyección de plástico</h3>
-                        <p class="service-card-description">
+                        <h3 class="service-card-title" data-translate="service2Title">Inyección de plástico</h3>
+                        <p class="service-card-description" data-translate="service2Description">
                             Servicio completo de inyección de plástico con control de calidad riguroso y capacidad de producción en serie para diversos sectores industriales.
                         </p>
                     </div>
@@ -151,8 +151,8 @@
 
                 <div class="service-card">
                     <div class="service-card-content">
-                        <h3 class="service-card-title">Cambios de ingeniería</h3>
-                        <p class="service-card-description">
+                        <h3 class="service-card-title" data-translate="service3Title">Cambios de ingeniería</h3>
+                        <p class="service-card-description" data-translate="service3Description">
                             Modificaciones y mejoras en diseños existentes, optimización de procesos y adaptación de moldes para nuevos requerimientos del cliente.
                         </p>
                     </div>
@@ -164,8 +164,8 @@
 
                 <div class="service-card">
                     <div class="service-card-content">
-                        <h3 class="service-card-title">Mantenimiento preventivo y correctivo</h3>
-                        <p class="service-card-description">
+                        <h3 class="service-card-title" data-translate="service4Title">Mantenimiento preventivo y correctivo</h3>
+                        <p class="service-card-description" data-translate="service4Description">
                             Programas de mantenimiento especializado para moldes y equipos, garantizando la máxima vida útil y rendimiento óptimo de sus herramientas.
                         </p>
                     </div>
@@ -177,8 +177,8 @@
 
                 <div class="service-card">
                     <div class="service-card-content">
-                        <h3 class="service-card-title">Fabricación de dispositivos y bases para localizadores y ubicación</h3>
-                        <p class="service-card-description">
+                        <h3 class="service-card-title" data-translate="service5Title">Fabricación de dispositivos y bases para localizadores y ubicación</h3>
+                        <p class="service-card-description" data-translate="service5Description">
                             Desarrollo de dispositivos especializados y bases de precisión para sistemas de localización y posicionamiento en procesos industriales.
                         </p>
                     </div>
@@ -191,8 +191,8 @@
 
                 <div class="service-card">
                     <div class="service-card-content">
-                        <h3 class="service-card-title">Inyección de termofijos</h3>
-                        <p class="service-card-description">
+                        <h3 class="service-card-title" data-translate="service6Title">Inyección de termofijos</h3>
+                        <p class="service-card-description" data-translate="service6Description">
                             Servicio completo de inyección de termofijos con control de calidad riguroso y capacidad de producción en serie, especializado en piezas de alta resistencia térmica y mecánica para diversos sectores industriales.
                         </p>
                     </div>
@@ -209,8 +209,8 @@
     <section id="tecnologia" class="machines-section">
         <div class="machines-container">
             <div class="machines-header">
-                <h1 class="machines-title">Nuestras Máquinas</h1>
-                <p class="machines-subtitle">
+                <h1 class="machines-title" data-translate="machinesTitle">Nuestras Máquinas</h1>
+                <p class="machines-subtitle" data-translate="machinesSubtitle">
                     Contamos con un moderno y equipado taller para así ofrecer resultados 
                     eficientes y producir con los más altos niveles de calidad.
                 </p>
@@ -225,19 +225,19 @@
                                 <h2 class="machine-name">HAAS TL2</h2>
                                 <div class="machine-specs">
                                     <div class="spec-item">
-                                        <span class="spec-label">Diámetro</span>
+                                        <span class="spec-label" data-translate="specDiameter">Diámetro</span>
                                         <span class="spec-value">406mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Largo</span>
+                                        <span class="spec-label" data-translate="specLength">Largo</span>
                                         <span class="spec-value">737mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Precisión</span>
+                                        <span class="spec-label" data-translate="specPrecision">Precisión</span>
                                         <span class="spec-value">±0.005mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Velocidad</span>
+                                        <span class="spec-label" data-translate="specSpeed">Velocidad</span>
                                         <span class="spec-value">4000 RPM</span>
                                     </div>
                                 </div>
@@ -253,19 +253,19 @@
                                 <h2 class="machine-name">HAAS VF3</h2>
                                 <div class="machine-specs">
                                     <div class="spec-item">
-                                        <span class="spec-label">Mesa X</span>
+                                        <span class="spec-label" data-translate="specTableX">Mesa X</span>
                                         <span class="spec-value">1016mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Mesa Y</span>
+                                        <span class="spec-label" data-translate="specTableY">Mesa Y</span>
                                         <span class="spec-value">508mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Eje Z</span>
+                                        <span class="spec-label" data-translate="specAxisZ">Eje Z</span>
                                         <span class="spec-value">635mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Husillo</span>
+                                        <span class="spec-label" data-translate="specSpindle">Husillo</span>
                                         <span class="spec-value">7500 RPM</span>
                                     </div>
                                 </div>
@@ -281,19 +281,19 @@
                                 <h2 class="machine-name">MAZAK QTN 250</h2>
                                 <div class="machine-specs">
                                     <div class="spec-item">
-                                        <span class="spec-label">Chuck</span>
+                                        <span class="spec-label" data-translate="specChuck">Chuck</span>
                                         <span class="spec-value">254mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Capacidad</span>
+                                        <span class="spec-label" data-translate="specCapacity">Capacidad</span>
                                         <span class="spec-value">500mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Potencia</span>
+                                        <span class="spec-label" data-translate="specPower">Potencia</span>
                                         <span class="spec-value">22kW</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Torque</span>
+                                        <span class="spec-label" data-translate="specTorque">Torque</span>
                                         <span class="spec-value">1200 Nm</span>
                                     </div>
                                 </div>
@@ -309,19 +309,19 @@
                                 <h2 class="machine-name">DMG MORI NLX</h2>
                                 <div class="machine-specs">
                                     <div class="spec-item">
-                                        <span class="spec-label">Diámetro Max</span>
+                                        <span class="spec-label" data-translate="specMaxDiameter">Diámetro Max</span>
                                         <span class="spec-value">320mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Longitud</span>
+                                        <span class="spec-label" data-translate="specLength">Longitud</span>
                                         <span class="spec-value">650mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Herramientas</span>
+                                        <span class="spec-label" data-translate="specTools">Herramientas</span>
                                         <span class="spec-value">12 posiciones</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Control</span>
+                                        <span class="spec-label" data-translate="specControl">Control</span>
                                         <span class="spec-value">SIEMENS 840D</span>
                                     </div>
                                 </div>
@@ -333,82 +333,82 @@
                         <!-- Slide 5 -->
                         <div class="carousel-slide">
                             <div class="machine-info">
-                                <h2 class="machine-name">MAQUINAS CNC</h2>
+                                <h2 class="machine-name" data-translate="cncMachines">MAQUINAS CNC</h2>
                                 <div class="machine-specs">
                                     <div class="spec-item">
-                                        <span class="spec-label">Diámetro Max</span>
+                                        <span class="spec-label" data-translate="specMaxDiameter">Diámetro Max</span>
                                         <span class="spec-value">320mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Longitud</span>
+                                        <span class="spec-label" data-translate="specLength">Longitud</span>
                                         <span class="spec-value">650mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Herramientas</span>
+                                        <span class="spec-label" data-translate="specTools">Herramientas</span>
                                         <span class="spec-value">12 posiciones</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Control</span>
+                                        <span class="spec-label" data-translate="specControl">Control</span>
                                         <span class="spec-value">SIEMENS 840D</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="machine-image">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="DMG MORI NLX Machine">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="CNC Machines">
                             </div>
                         </div>
                         <!-- Slide 6 -->
                         <div class="carousel-slide">
                             <div class="machine-info">
-                                <h2 class="machine-name">MAQUINAS DE INYECCION</h2>
+                                <h2 class="machine-name" data-translate="injectionMachines">MAQUINAS DE INYECCION</h2>
                                 <div class="machine-specs">
                                     <div class="spec-item">
-                                        <span class="spec-label">Diámetro Max</span>
+                                        <span class="spec-label" data-translate="specMaxDiameter">Diámetro Max</span>
                                         <span class="spec-value">320mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Longitud</span>
+                                        <span class="spec-label" data-translate="specLength">Longitud</span>
                                         <span class="spec-value">650mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Herramientas</span>
+                                        <span class="spec-label" data-translate="specTools">Herramientas</span>
                                         <span class="spec-value">12 posiciones</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Control</span>
+                                        <span class="spec-label" data-translate="specControl">Control</span>
                                         <span class="spec-value">SIEMENS 840D</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="machine-image">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="DMG MORI NLX Machine">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="Injection Machines">
                             </div>
                         </div>
                         <!-- Slide 7 -->
                         <div class="carousel-slide">
                             <div class="machine-info">
-                                <h2 class="machine-name">COMPARADOR OPTICO</h2>
+                                <h2 class="machine-name" data-translate="opticalComparator">COMPARADOR OPTICO</h2>
                                 <div class="machine-specs">
                                     <div class="spec-item">
-                                        <span class="spec-label">Diámetro Max</span>
+                                        <span class="spec-label" data-translate="specMaxDiameter">Diámetro Max</span>
                                         <span class="spec-value">320mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Longitud</span>
+                                        <span class="spec-label" data-translate="specLength">Longitud</span>
                                         <span class="spec-value">650mm</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Herramientas</span>
+                                        <span class="spec-label" data-translate="specTools">Herramientas</span>
                                         <span class="spec-value">12 posiciones</span>
                                     </div>
                                     <div class="spec-item">
-                                        <span class="spec-label">Control</span>
+                                        <span class="spec-label" data-translate="specControl">Control</span>
                                         <span class="spec-value">SIEMENS 840D</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="machine-image">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="DMG MORI NLX Machine">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="Optical Comparator">
                             </div>
                         </div>
                     </div>
@@ -427,8 +427,8 @@
     <section id="contacto" class="contact-section">
         <div class="contact-container">
             <div class="contact-header">
-                <h1 class="contact-title">¡Contáctanos!</h1>
-                <p class="contact-subtitle">
+                <h1 class="contact-title" data-translate="contactTitle">¡Contáctanos!</h1>
+                <p class="contact-subtitle" data-translate="contactSubtitle">
                     Te ayudamos a resolver tus dudas, estamos a una llamada de distancia.
                 </p>
                 
@@ -458,33 +458,33 @@
             <div class="form-row">
                 <div class="form-group">
                     <label class="form-label" for="first_name" data-translate="nameLabel">Nombre</label>
-                    <input type="text" id="first_name" name="first_name" class="form-input" required data-placeholder="namePlaceholder">
+                    <input type="text" id="first_name" name="first_name" class="form-input" required data-translate-placeholder="namePlaceholder">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="last_name">Apellido</label>
-                    <input type="text" id="last_name" name="last_name" class="form-input" required>
+                    <label class="form-label" for="last_name" data-translate="lastNameLabel">Apellido</label>
+                    <input type="text" id="last_name" name="last_name" class="form-input" required data-translate-placeholder="lastNamePlaceholder">
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="form-label" for="email" data-translate="emailLabel">Email</label>
-                <input type="email" id="email" name="email" class="form-input" required data-placeholder="emailPlaceholder">
+                <input type="email" id="email" name="email" class="form-input" required data-translate-placeholder="emailPlaceholder">
             </div>
 
             <div class="form-row">
                 <div class="form-group">
-                    <label class="form-label" for="mobile">Teléfono</label>
-                    <input type="tel" id="mobile" name="mobile" class="form-input">
+                    <label class="form-label" for="mobile" data-translate="phoneLabel">Teléfono</label>
+                    <input type="tel" id="mobile" name="mobile" class="form-input" data-translate-placeholder="phonePlaceholder">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="company">Empresa</label>
-                    <input type="text" id="company" name="company" class="form-input">
+                    <label class="form-label" for="company" data-translate="companyLabel">Empresa</label>
+                    <input type="text" id="company" name="company" class="form-input" data-translate-placeholder="companyPlaceholder">
                 </div>
             </div>
 
             <div class="form-group">
-                <label class="form-label" for="description" >Descripción</label>
-                <textarea id="description" name="description" class="form-textarea" placeholder="Cuéntanos sobre tu proyecto..." data-translate="descriptionLabel" data-placeholder="messagePlaceholder"></textarea>
+                <label class="form-label" for="description" data-translate="descriptionLabel">Descripción</label>
+                <textarea id="description" name="description" class="form-textarea" data-translate-placeholder="messagePlaceholder"></textarea>
             </div>
 
             <!-- reCAPTCHA -->
@@ -497,8 +497,8 @@
                 <!-- Map Section -->
                 <div class="map-section">
                     <div class="map-header">
-                        <h3 class="map-title">Nuestra Ubicación</h3>
-                        <p class="map-address">Ciudad de México, México</p>
+                        <h3 class="map-title" data-translate="locationTitle">Nuestra Ubicación</h3>
+                        <p class="map-address" data-translate="locationAddress">Ciudad de México, México</p>
                     </div>
                     <div class="map-container">
                         <iframe 
@@ -515,7 +515,7 @@
             <div class="social-section">
                 <a href="https://www.linkedin.com/company/stevin-s-a-de-c-v-/" target="_blank" class="social-link">
                     <div class="linkedin-icon">in</div>
-                    Síguenos en LinkedIn
+                    <span data-translate="followLinkedIn">Síguenos en LinkedIn</span>
                 </a>
             </div>
         </div>
@@ -528,7 +528,7 @@
                 <!-- Brand Section -->
                 <div class="footer-brand">
                     <div class="footer-logo"><img src="images/brand.png" alt="Logo STEVIN Footer" class="brand"></div>
-                    <p class="footer-description">
+                    <p class="footer-description" data-translate="footerDescription">
                         Especialistas en moldes de inyección de plástico y Zamak. 
                         Más de 20 años de experiencia ofreciendo soluciones de calidad 
                         para la industria automotriz, farmacéutica y productos para el hogar.
@@ -544,53 +544,47 @@
                         </a>
                         <a href="#contacto" class="contact-link">
                             <span class="contact-icon">📍</span>
-                            Ciudad de México, México
+                            <span data-translate="footerLocation">Ciudad de México, México</span>
                         </a>
                     </div>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/company/stevin-s-a-de-c-v-/" class="social-link" aria-label="LinkedIn" target="_blank">
                             <span>in</span>
                         </a>
-                        <!-- <a href="#" class="social-link" aria-label="Facebook" target="_blank">
-                            <span>f</span>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram" target="_blank">
-                            <span>📷</span>
-                        </a> -->
                     </div>
                 </div>
 
                 <!-- Services Column -->
                 <div class="footer-column">
-                    <h3 class="footer-column-title">Servicios</h3>
+                    <h3 class="footer-column-title" data-translate="footerServicesTitle">Servicios</h3>
                     <div class="footer-links">
-                        <a href="#servicios" class="footer-link">Moldes de Inyección</a>
-                        <a href="#servicios" class="footer-link">Inyección de Plástico</a>
-                        <a href="#servicios" class="footer-link">Cambios de Ingeniería</a>
-                        <a href="#servicios" class="footer-link">Mantenimiento</a>
+                        <a href="#servicios" class="footer-link" data-translate="footerService1">Moldes de Inyección</a>
+                        <a href="#servicios" class="footer-link" data-translate="footerService2">Inyección de Plástico</a>
+                        <a href="#servicios" class="footer-link" data-translate="footerService3">Cambios de Ingeniería</a>
+                        <a href="#servicios" class="footer-link" data-translate="footerService4">Mantenimiento</a>
                     </div>
                 </div>
 
                 <!-- Company Column -->
                 <div class="footer-column">
-                    <h3 class="footer-column-title">Empresa</h3>
+                    <h3 class="footer-column-title" data-translate="footerCompanyTitle">Empresa</h3>
                     <div class="footer-links">
-                        <a href="#nosotros" class="footer-link">Nosotros</a>
-                        <a href="#nosotros" class="footer-link">Misión y Visión</a>
-                        <a href="#maquinas" class="footer-link">Nuestras Máquinas</a>
-                        <a href="#contacto" class="footer-link">Contacto</a>
+                        <a href="#nosotros" class="footer-link" data-translate="footerAbout">Nosotros</a>
+                        <a href="#nosotros" class="footer-link" data-translate="footerMissionVision">Misión y Visión</a>
+                        <a href="#maquinas" class="footer-link" data-translate="footerMachines">Nuestras Máquinas</a>
+                        <a href="#contacto" class="footer-link" data-translate="footerContact">Contacto</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    © 2025 STEVIN. Todos los derechos reservados.
-                    <br>Hecho por <a href="https://sevenstudio7.com" target="_blank" class="link-dev">Seven Studio 7</a>
+                    <span data-translate="footerCopyright">© 2025 STEVIN. Todos los derechos reservados.</span>
+                    <br><span data-translate="footerMadeBy">Hecho por</span> <a href="https://sevenstudio7.com" target="_blank" class="link-dev">Seven Studio 7</a>
                 </div>
                 <div class="footer-legal">
-                    <a href="#privacidad">Política de Privacidad</a>
-                    <a href="#terminos">Términos de Uso</a>
+                    <a href="#privacidad" data-translate="privacyPolicy">Política de Privacidad</a>
+                    <a href="#terminos" data-translate="termsOfUse">Términos de Uso</a>
                 </div>
             </div>
         </div>
