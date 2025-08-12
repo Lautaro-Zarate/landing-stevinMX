@@ -301,10 +301,9 @@ const translations = {
         specLength: "Largo",
         specPrecision: "Precisión",
         specSpeed: "Velocidad",
-        specTableX: "Mesa X",
-        specTableY: "Mesa Y",
-        specAxisZ: "Eje Z",
-        specSpindle: "Husillo",
+        specTableX: "X",
+        specTableY: "Y",
+        specAxisZ: "Z",
         specChuck: "Chuck",
         specCapacity: "Capacidad",
         specPower: "Potencia",
@@ -377,34 +376,34 @@ const translations = {
         
         // Services Preview
         servicesTitle: "Services",
-        servicesDescription1: "We are dedicated to more than just mold manufacturing",
-        servicesDescription2: "We make projects a reality by always taking on the challenges of industrializing new Plastic and Zamak products.",
+        servicesDescription1: "Product development, injection molding and devices",
+        servicesDescription2: "We make projects a reality by taking the risks involved in industrializing new plastic and Zamak products.",
         
         // About Section
         aboutTitle: "About Us",
-        aboutDescription: "Established in 2001 by Randolph Mutz, STEVIN is a company that serves the needs of various clients in a wide range of industries such as automotive, pharmaceutical and household products.",
-        aboutQuote: "Creating custom molds remains the commitment that distinguishes us",
+        aboutDescription: "Founded in 2001 by Randolph Mutz, STEVIN is a company that tends to the needs of different clients in a broad range of industries like the automotive, pharmaceutical and home products industries.",
+        aboutQuote: "Creating tailor-made molds is how we continue to commit to differentiate ourselves.",
         
         // Mission, Vision, Values
         missionTitle: "MISSION",
-        missionContent: "To satisfy our customers' needs through the manufacture of plastic and Zamak injection molds, providing them with excellent service and quality.",
+        missionContent: "To satisfy the needs of our clients by manufacturing plastic and Zamak injection molding, providing excellent service and quality.",
         visionTitle: "VISION",
-        visionContent: "To be leaders in the manufacture of Plastic and Zamak injection molds, always maintaining the best quality and differentiating ourselves through our excellence in service.",
+        visionContent: "To be the industry leaders in plastic and Zamak injection molding manufacture, distinguishing ourselves with the best quality and excellent service.",
         valuesTitle: "VALUES",
         value1: "Teamwork",
         value2: "Commitment",
         value3: "Honesty",
         value4: "Punctuality",
-        value5: "Health and Safety",
+        value5: "5'S System",
         value6: "Environmental Responsibility",
         
         // Services Section
         servicesMainTitle: "Services",
-        servicesSubtitle1: "Product Development, Injection Molds and Devices",
-        servicesSubtitle2: "We aim for sustained company growth and professional development of our collaborators.",
+        servicesSubtitle1: "Product Development, Injection molding and devices",
+        servicesSubtitle2: "Our objective is to have sustained company growth alongside the personal development of our collaborators.",
         
         // Individual Services
-        service1Title: "Manufacturing of plastic and Zamak injection molds",
+        service1Title: "Plastic and Zamak injection Molding Production",
         service1Description: "Design and manufacture of high-precision molds for plastic and Zamak injection, using cutting-edge technology and top-quality materials.",
         service2Title: "Plastic injection",
         service2Description: "Complete plastic injection service with rigorous quality control and series production capacity for various industrial sectors.",
@@ -419,16 +418,16 @@ const translations = {
         
         // Machines Section
         machinesTitle: "Our Machines",
-        machinesSubtitle: "We have a modern and equipped workshop to offer efficient results and produce with the highest quality levels.",
+        machinesSubtitle: "We have a modern and well-equipped workshop for efficient results and to produce with the highest quality standards.",
         
         // Machine Specifications
         specDiameter: "Diameter",
-        specLength: "Length",
+        specLength: "Large",
         specPrecision: "Precision",
         specSpeed: "Speed",
-        specTableX: "Table X",
-        specTableY: "Table Y",
-        specAxisZ: "Z Axis",
+        specTableX: "X",
+        specTableY: "Y",
+        specAxisZ: "Z",
         specSpindle: "Spindle",
         specChuck: "Chuck",
         specCapacity: "Capacity",
@@ -438,12 +437,14 @@ const translations = {
         specTools: "Tools",
         specControl: "Control",
         cncMachines: "CNC MACHINES",
-        injectionMachines: "INJECTION MACHINES",
+        injectionMachines: "INJECTION MOLDING MACHINES",
         opticalComparator: "OPTICAL COMPARATOR",
+        specMachineName: "CLAMP TONNAGE 2500",
+        specMachineName2: "CLAMP TONNAGE 4500",
         
         // Contact Section
         contactTitle: "Contact Us!",
-        contactSubtitle: "We help you solve your doubts, we are just a phone call away.",
+        contactSubtitle: "We can answer all your questions; we're just a phone call away.",
         
         // Form Labels and Placeholders
         nameLabel: "Name",
@@ -492,18 +493,18 @@ const translations = {
         // Navigation
         navHome: "Startseite",
         navAbout: "Über uns",
-        navServices: "Dienstleistungen",
+        navServices: "Unsere leistungen",
         navTechnology: "Technologie",
         navContact: "Kontakt",
         
         // Hero Section
-        heroTitle: "Kunststoff- und Zamak-Spritzgussformen,",
+        heroTitle: "Spritzgussformen für Kunststoffe und Zamak,",
         heroWelcome: "Willkommen bei STEVIN!",
         
         // Services Preview
-        servicesTitle: "Dienstleistungen",
-        servicesDescription1: "Wir widmen uns mehr als nur der Formherstellung",
-        servicesDescription2: "Wir verwirklichen Projekte, indem wir immer die Herausforderungen der Industrialisierung neuer Kunststoff- und Zamak-Produkte annehmen.",
+        servicesTitle: "Unsere Leistungen",
+        servicesDescription1: "Wir bietenmehr, als der reine Produktion von Spritzgussformen",
+        servicesDescription2: "Wir setzen unsere Projekte in die Tat um und stellen uns den Herausforderungen, die eine Industrialisierung von neuen Kunststoff- und Zamakprodukten mit sich bringt.",
         
         // About Section
         aboutTitle: "Über uns",
@@ -562,13 +563,15 @@ const translations = {
         specMaxDiameter: "Max. Durchmesser",
         specTools: "Werkzeuge",
         specControl: "Steuerung",
-        cncMachines: "CNC-MASCHINEN",
-        injectionMachines: "SPRITZGUSSMASCHINEN",
-        opticalComparator: "OPTISCHER KOMPARATOR",
+        cncMachines: "CNC-MASCHINE",
+        injectionMachines: "Spritzgießmaschinen",
+        opticalComparator: "Optische Kontrollgeräte",
+        specMachineName: "SCHLIESSKRAFT 2500",
+        specMachineName: "SCHLIESSKRAFT 4500",
         
         // Contact Section
-        contactTitle: "Kontaktieren Sie uns!",
-        contactSubtitle: "Wir helfen Ihnen bei der Lösung Ihrer Fragen, wir sind nur einen Anruf entfernt.",
+        contactTitle: "Kontaktiere uns!",
+        contactSubtitle: "Gerne stehen wir jederzeit für alle Fragen zur Verfügung. Wir sind nur einen Anruf entfernt.",
         
         // Form Labels and Placeholders
         nameLabel: "Name",
