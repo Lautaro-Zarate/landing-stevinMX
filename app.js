@@ -291,3 +291,78 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     if (checkbox.checked) checkbox.checked = false;
     });
 });
+
+function timestamp() {
+    let response = document.getElementById("g-recaptcha-response");
+    if (response == null || response.value.trim() == "") {
+        let elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+        elems["ts"] = JSON.stringify(new Date().getTime());
+        document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+    }
+}
+setInterval(timestamp, 500);
+
+// Diccionario de traducciones
+const translations = {
+    es: {
+        title: "Bienvenido a nuestra página",
+        description: "Ofrecemos los mejores servicios para tu negocio.",
+        nameLabel: "Nombre",
+        namePlaceholder: "Ingresa tu nombre",
+        emailLabel: "Correo electrónico",
+        emailPlaceholder: "Ingresa tu correo",
+        messageLabel: "Mensaje",
+        messagePlaceholder: "Escribe tu mensaje",
+        sendBtn: "Enviar"
+    },
+    en: {
+        title: "Welcome to our website",
+        description: "We offer the best services for your business.",
+        nameLabel: "Name",
+        namePlaceholder: "Enter your name",
+        emailLabel: "Email",
+        emailPlaceholder: "Enter your email",
+        messageLabel: "Message",
+        messagePlaceholder: "Write your message",
+        sendBtn: "Send"
+    },
+    de: {
+        title: "Willkommen auf unserer Website",
+        description: "Wir bieten die besten Dienstleistungen für Ihr Unternehmen an.",
+        nameLabel: "Name",
+        namePlaceholder: "Geben Sie Ihren Namen ein",
+        emailLabel: "E-Mail",
+        emailPlaceholder: "Geben Sie Ihre E-Mail ein",
+        messageLabel: "Nachricht",
+        messagePlaceholder: "Schreiben Sie Ihre Nachricht",
+        sendBtn: "Senden"
+    }
+};
+
+// Función para cambiar idioma
+function setLanguage(lang) {
+    // Textos
+    document.querySelectorAll("[data-translate]").forEach(el => {
+        const key = el.getAttribute("data-translate");
+        el.textContent = translations[lang][key];
+    });
+
+    // Placeholders
+    document.querySelectorAll("[data-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-placeholder");
+        el.placeholder = translations[lang][key];
+    });
+
+    localStorage.setItem("lang", lang); // Guardar idioma
+}
+
+// Listeners para las banderas
+document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
+});
+
+// Idioma inicial
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("lang") || "es";
+    setLanguage(savedLang);
+});

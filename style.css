@@ -97,6 +97,9 @@ h1,h2,h3,h4,h5,h6{
 .flag.de { 
     background-image: url('https://flagcdn.com/de.svg'); 
 }
+.flag.es{
+    background-image: url('https://flagcdn.com/es.svg');
+}
 /* Hamburger Menu */
 .menu-toggle {
     display: none;
@@ -181,6 +184,9 @@ h1,h2,h3,h4,h5,h6{
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .services-preview h2 {
@@ -1001,6 +1007,8 @@ h1,h2,h3,h4,h5,h6{
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .contact-item:hover {
@@ -1386,6 +1394,10 @@ h1,h2,h3,h4,h5,h6{
 .footer-legal a:hover {
     color: #00d4ff;
 }
+.link-dev{
+    text-decoration: none;
+    color: var(--text-color-second);
+}
 
 /* Responsive Design */
 @media (max-width: 968px) {
@@ -1608,9 +1620,6 @@ h1,h2,h3,h4,h5,h6{
     .nav-container {
         padding: 0 16px;
         justify-content: flex-end;
-    }
-    .brand{
-        margin-right: 190px;
     }
     .menu-icon {
         display: block;
