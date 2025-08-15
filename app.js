@@ -280,17 +280,17 @@ const translations = {
         
         // Individual Services
         service1Title: "Fabricación de moldes de inyección de plástico y Zamak",
-        service1Description: "Diseño y fabricación de moldes de alta precisión para inyección de plástico y Zamak, utilizando tecnología de vanguardia y materiales de primera calidad.",
+        service1Description: "Gracias a nuestra infraestructura que cuenta con un área de diseño y diversos Centros de Maquinado CNC y a nuestra cultura de precisión alemana, nos es posible integrar verticalmente el proceso de fabricación, desde la etapa del diseño hasta la entrega del molde listo para ser inyectado, asegurando con esto la calidad que nuestros clientes exigen.",
         service2Title: "Inyección de plástico",
-        service2Description: "Servicio completo de inyección de plástico con control de calidad riguroso y capacidad de producción en serie para diversos sectores industriales.",
+        service2Description: "Descubre la excelencia en la inyección de plástico con nuestros servicios de vanguardia. Desde el diseño innovador hasta productos impecablemente terminados, nuestro enfoque de precisión garantiza resultados de alta calidad. Con tecnología de última generación y un compromiso con la satisfacción del cliente, damos vida a tus ideas. Experimenta la diferencia de una inyección de plástico eficiente, adaptada a tus necesidades.",
         service3Title: "Cambios de ingeniería",
-        service3Description: "Modificaciones y mejoras en diseños existentes, optimización de procesos y adaptación de moldes para nuevos requerimientos del cliente.",
+        service3Description: "Aplicamos cambios de ingeniería a moldes y piezas en base a las necesidades de nuestros clientes. Gracias a nuestra área de diseño podemos generar propuestas 3D para analizar los cambios de ingeniería y posteriormente llevarlos a cabo en nuestros centros de maquinado.",
         service4Title: "Mantenimiento preventivo y correctivo",
-        service4Description: "Programas de mantenimiento especializado para moldes y equipos, garantizando la máxima vida útil y rendimiento óptimo de sus herramientas.",
+        service4Description: "Desarmamos el molde y reemplazamos todos los elementos de sello, revisamos el sistema de refrigeración y sistema de botado, posteriormente lubricamos y armamos, esto ayuda a que los moldes de nuestros clientes tengan menos interrupciones productivas.",
         service5Title: "Fabricación de dispositivos y bases para localizadores y ubicación",
         service5Description: "Desarrollo de dispositivos especializados y bases de precisión para sistemas de localización y posicionamiento en procesos industriales.",
         service6Title: "Inyección de termofijos",
-        service6Description: "Servicio completo de inyección de termofijos con control de calidad riguroso y capacidad de producción en serie, especializado en piezas de alta resistencia térmica y mecánica para diversos sectores industriales.",
+        service6Description: "Gracias a nuestra tecnología de arco tirado podemos ofrecer a nuestros clientes microsoldadura en frio en todo tipo de metales, de esta manera el molde o pieza no sufrirá deformaciones ni cambios de dureza.",
         
         // Machines Section
         machinesTitle: "Nuestras Máquinas",
@@ -371,7 +371,7 @@ const translations = {
         navContact: "Contact",
         
         // Hero Section
-        heroTitle: "Plastic and Zamak Injection Molds,",
+        heroTitle: "Plastic and Zamak Injection Molding,",
         heroWelcome: "Welcome to STEVIN!",
         
         // Services Preview
@@ -404,17 +404,17 @@ const translations = {
         
         // Individual Services
         service1Title: "Plastic and Zamak injection Molding Production",
-        service1Description: "Design and manufacture of high-precision molds for plastic and Zamak injection, using cutting-edge technology and top-quality materials.",
+        service1Description: "Thanks to our infrastructure, complete with a design area and different CNC Machining Centers, and to our German culture of precision, we can vertically integrate the process of manufacturing, from the design stage to the delivery of the molding ready for injection, ensuring the quality our clients demand and expect.",
         service2Title: "Plastic injection",
-        service2Description: "Complete plastic injection service with rigorous quality control and series production capacity for various industrial sectors.",
+        service2Description: "Discover excellence in plastic injection with our cutting-edge services. From innovative design to flawlessly finished products, our precision-driven approach ensures top-quality results. With state-of-the-art technology and a commitment to client satisfaction, we bring your ideas to life. Experience the difference of seamless plastic injection, tailored to your needs.",
         service3Title: "Engineering changes",
-        service3Description: "Modifications and improvements to existing designs, process optimization and mold adaptation for new customer requirements.",
+        service3Description: "We apply engineering changes to molding and base pieces according to our clients needs. Thanks to our design area, we can generate 3D proposals to analyze engineering changes and then carry them out in our machining centers.",
         service4Title: "Preventive and corrective maintenance",
-        service4Description: "Specialized maintenance programs for molds and equipment, guaranteeing maximum useful life and optimal performance of your tools.",
+        service4Description: "We dismantle the molding and replace all of the sealing elements, check the refrigeration and disposal system, and then lubricate and put the mold back together. This helps to keep client molding production interruptions to a minimum.",
         service5Title: "Manufacturing of devices and bases for locators and positioning",
         service5Description: "Development of specialized devices and precision bases for location and positioning systems in industrial processes.",
         service6Title: "Thermoset injection",
-        service6Description: "Complete thermoset injection service with rigorous quality control and series production capacity, specialized in parts with high thermal and mechanical resistance for various industrial sectors.",
+        service6Description: "Thanks to our arc spot technology, we can offer our clients cold microwelding in all kinds of metals. By using this welding technique, the mold or part won't have problems with deformations or changes in hardness.",
         
         // Machines Section
         machinesTitle: "Our Machines",
@@ -508,53 +508,53 @@ const translations = {
         
         // About Section
         aboutTitle: "Über uns",
-        aboutDescription: "STEVIN wurde 2001 von Randolph Mutz gegründet und ist ein Unternehmen, das die Bedürfnisse verschiedener Kunden in einem breiten Spektrum von Branchen wie Automobil, Pharmazie und Haushaltsprodukte bedient.",
-        aboutQuote: "Die Herstellung maßgeschneiderter Formen bleibt das Engagement, das uns auszeichnet",
+        aboutDescription: "Das Unternehmen STEVIN wurde im Jahre 2001 von Randolph Mutz gegründet und erfreut sich höchster Kundenzufriedenheit in unterschiedlichen Industriebereichen, wie der Automobilindustrie, Pharmaindustrie oder Herstellung von Haushaltsprodukten.",
+        aboutQuote: "Wir widmen uns der maßgerechten Anfertigung von Spritzgussformen. Das ist es, was uns einzigartig macht",
         
         // Mission, Vision, Values
         missionTitle: "MISSION",
-        missionContent: "Die Bedürfnisse unserer Kunden durch die Herstellung von Kunststoff- und Zamak-Spritzgussformen zu erfüllen und ihnen exzellenten Service und Qualität zu bieten.",
+        missionContent: "Unserere Kunden zufriedenzustellen durch die Herstellung von Spritzgussformen für Kunststoff und Zamak, bei exzellentem Service und höchster Qualität.",
         visionTitle: "VISION",
-        visionContent: "Führend in der Herstellung von Kunststoff- und Zamak-Spritzgussformen zu sein, dabei stets die beste Qualität zu gewährleisten und uns durch unsere Exzellenz im Service zu unterscheiden.",
+        visionContent: "Marktführer in der Herstellung von Spritzgussformen für Kunststoff und Zamak zu sein, dabei höchste Qualität zu bieten und uns durch unsere außergewöhnliche Servicequalität zu behaupten.",
         valuesTitle: "WERTE",
         value1: "Teamarbeit",
-        value2: "Engagement",
+        value2: "Verbindlichkeit",
         value3: "Ehrlichkeit",
         value4: "Pünktlichkeit",
-        value5: "Gesundheit und Sicherheit",
-        value6: "Umweltverantwortung",
+        value5: "System 5S",
+        value6: "Umweltbewusstes Handeln",
         
         // Services Section
         servicesMainTitle: "Dienstleistungen",
-        servicesSubtitle1: "Produktentwicklung, Spritzgussformen und Geräte",
-        servicesSubtitle2: "Wir streben nachhaltiges Unternehmenswachstum und die berufliche Entwicklung unserer Mitarbeiter an.",
+        servicesSubtitle1: "Produktentwicklung, Formen für Spritzguss und Vorrichtungen.",
+        servicesSubtitle2: "Unser Ziel ist das nachhaltige Wachstum des Unternehmens und die berufliche Entwicklung der Mitarbeiter.",
         
         // Individual Services
-        service1Title: "Herstellung von Kunststoff- und Zamak-Spritzgussformen",
-        service1Description: "Design und Herstellung hochpräziser Formen für Kunststoff- und Zamak-Spritzguss unter Verwendung modernster Technologie und hochwertiger Materialien.",
-        service2Title: "Kunststoffspritzguss",
-        service2Description: "Kompletter Kunststoffspritzguss-Service mit rigoroser Qualitätskontrolle und Serienproduktionskapazität für verschiedene Industriezweige.",
-        service3Title: "Konstruktionsänderungen",
-        service3Description: "Modifikationen und Verbesserungen bestehender Designs, Prozessoptimierung und Formanpassung für neue Kundenanforderungen.",
-        service4Title: "Vorbeugende und korrektive Wartung",
-        service4Description: "Spezialisierte Wartungsprogramme für Formen und Ausrüstung, die maximale Lebensdauer und optimale Leistung Ihrer Werkzeuge gewährleisten.",
-        service5Title: "Herstellung von Geräten und Basen für Lokalisatoren und Positionierung",
+        service1Title: "Herstellung von Spritzgussformen aus Kunststoff und Zamak",
+        service1Description: "Unser Geheimnis liegt in der Kombination unserer außerordentlichen Infrastruktur – wir verfügen über eine Design-Abteilung und verschiedene CNC-Bearbeitungszentren – gepaart mit unserer deutschen Mentalität und dem eigenen Anspruch Präzision. So ist es uns möglich, einen übergreifenden Fertigungsprozess zu bieten, von der Planung bis zur Auslieferung der Form und gleichzeitig die Qualität zu sichern, auf die unsere Kunden zählen.",
+        service2Title: "Plastikeinspritzung",
+        service2Description: "Entdecken Sie Exzellenz in der Kunststoff-Spritzguss mit unseren modernen Dienstleistungen. Von innovativem Design bis zu makellosen Endprodukten gewährleistet unser präzisionsgetriebener Ansatz erstklassige Ergebnisse. Mit modernster Technologie und einem Engagement für Kundenzufriedenheit setzen wir Ihre Ideen um. Erleben Sie perfekte Kunststoff-Spritzguss-Teile, maßgeschneidert für Ihre Bedürfnisse.",
+        service3Title: "Technische Änderungen",
+        service3Description: "Wir bieten technische Änderungen von Spritzgussformen und Werkstücken, zugeschnitten auf die Bedürfnisse unserer Kunden. Dank unserer professionellen Design-Abteilung ist es uns möglich, Vorschläge in 3D zu präsentieren und die technischen Änderungen detailliert zu analysieren. Die Durchführung geschieht im Anschluss in unseren Bearbeitungszentren.",
+        service4Title: "Präventive und korrektive Wartung",
+        service4Description: "Wir demontieren die Form, ersetzen alle Elemente und überprüfen das Start- und Kühlsystem. Anschließend wird die Form eingeschmiert und wieder montiert. Auf diese Weise werden Störungen reduziert.",
+        service5Title: "Herstellung von Geräten und Lackierungs- und Schwingungsgrundlagen",
         service5Description: "Entwicklung spezialisierter Geräte und Präzisionsbasen für Lokalisierungs- und Positionierungssysteme in industriellen Prozessen.",
-        service6Title: "Duroplast-Spritzguss",
-        service6Description: "Kompletter Duroplast-Spritzguss-Service mit rigoroser Qualitätskontrolle und Serienproduktionskapazität, spezialisiert auf Teile mit hoher thermischer und mechanischer Beständigkeit für verschiedene Industriezweige.",
+        service6Title: "Maschine für Mikro-Plasmaschweißen sowie TIG-Schweißen",
+        service6Description: "Dank unserer Technologie des Lichtbogenschweißens können wir unseren Kunden Kalt-Mikroschweißtechnik für alle Arten von Metall bieten. Auf diese Weise werden Verformungen oder Härteveränderungen der Form vermieden.",
         
         // Machines Section
         machinesTitle: "Unsere Maschinen",
-        machinesSubtitle: "Wir verfügen über eine moderne und ausgestattete Werkstatt, um effiziente Ergebnisse zu liefern und mit höchsten Qualitätsstandards zu produzieren.",
+        machinesSubtitle: "Wir verfügen über eine moderne und gut ausgestattete Werkstatt, um effiziente Ergebnisse auf höchsten Qualitätsstufen zu bieten.",
         
         // Machine Specifications
         specDiameter: "Durchmesser",
         specLength: "Länge",
         specPrecision: "Präzision",
         specSpeed: "Geschwindigkeit",
-        specTableX: "Tisch X",
-        specTableY: "Tisch Y",
-        specAxisZ: "Z-Achse",
+        specTableX: "X",
+        specTableY: "Y",
+        specAxisZ: "Z",
         specSpindle: "Spindel",
         specChuck: "Spannfutter",
         specCapacity: "Kapazität",

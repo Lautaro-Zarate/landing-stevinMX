@@ -413,7 +413,7 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.06);
-    min-height: 380px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -441,7 +441,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .service-card-description {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     color: #424245;
     margin-bottom: 24px;
@@ -664,7 +664,6 @@ h1,h2,h3,h4,h5,h6{
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
-
 .service-item:hover {
     transform: translateX(8px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
@@ -1683,7 +1682,7 @@ h1,h2,h3,h4,h5,h6{
 
     .service-card {
         padding: 20px 16px 16px;
-        min-height: 280px;
+        min-height: 380px;
     }
 
     .service-card-title {
