@@ -290,7 +290,7 @@ const translations = {
         service5Title: "Fabricación de dispositivos y bases para localizadores y ubicación",
         service5Description: "Desarrollo de dispositivos especializados y bases de precisión para sistemas de localización y posicionamiento en procesos industriales.",
         service6Title: "Inyección de termofijos",
-        service6Description: "Gracias a nuestra tecnología de arco tirado podemos ofrecer a nuestros clientes microsoldadura en frio en todo tipo de metales, de esta manera el molde o pieza no sufrirá deformaciones ni cambios de dureza.",
+        service6Description: "Servicio completo de inyección de termofijos con control de calidad riguroso y capacidad de producción en serie, especializado en piezas de alta resistencia térmica y mecánica para diversos sectores industriales.",
         
         // Machines Section
         machinesTitle: "Nuestras Máquinas",
@@ -413,8 +413,8 @@ const translations = {
         service4Description: "We dismantle the molding and replace all of the sealing elements, check the refrigeration and disposal system, and then lubricate and put the mold back together. This helps to keep client molding production interruptions to a minimum.",
         service5Title: "Manufacturing of devices and bases for locators and positioning",
         service5Description: "Development of specialized devices and precision bases for location and positioning systems in industrial processes.",
-        service6Title: "Thermoset injection",
-        service6Description: "Thanks to our arc spot technology, we can offer our clients cold microwelding in all kinds of metals. By using this welding technique, the mold or part won't have problems with deformations or changes in hardness.",
+        service6Title: "Thermoset injection molding",
+        service6Description: "Comprehensive thermoset injection molding service with rigorous quality control and serial production capacity, specialized in high thermal and mechanical resistance parts for various industrial sectors.",
         
         // Machines Section
         machinesTitle: "Our Machines",
@@ -531,7 +531,7 @@ const translations = {
         
         // Individual Services
         service1Title: "Herstellung von Spritzgussformen aus Kunststoff und Zamak",
-        service1Description: "Unser Geheimnis liegt in der Kombination unserer außerordentlichen Infrastruktur – wir verfügen über eine Design-Abteilung und verschiedene CNC-Bearbeitungszentren – gepaart mit unserer deutschen Mentalität und dem eigenen Anspruch Präzision. So ist es uns möglich, einen übergreifenden Fertigungsprozess zu bieten, von der Planung bis zur Auslieferung der Form und gleichzeitig die Qualität zu sichern, auf die unsere Kunden zählen.",
+        service1Description: "Unser Geheimnis liegt in der Kombination unserer außerordentlichen Infrastruktur – wir verfügen über eine Design-Abteilung und verschiedene CNC-Bearbeitungszentren – gepaart mit unserer deutschen Mentalität und dem eigenen Anspruch Präzision. So ist es uns möglich, einen übergreifenden Fertigungsprozess zu bieten, von der Planung bis zur Auslieferung der Form.",
         service2Title: "Plastikeinspritzung",
         service2Description: "Entdecken Sie Exzellenz in der Kunststoff-Spritzguss mit unseren modernen Dienstleistungen. Von innovativem Design bis zu makellosen Endprodukten gewährleistet unser präzisionsgetriebener Ansatz erstklassige Ergebnisse. Mit modernster Technologie und einem Engagement für Kundenzufriedenheit setzen wir Ihre Ideen um. Erleben Sie perfekte Kunststoff-Spritzguss-Teile, maßgeschneidert für Ihre Bedürfnisse.",
         service3Title: "Technische Änderungen",
@@ -540,8 +540,8 @@ const translations = {
         service4Description: "Wir demontieren die Form, ersetzen alle Elemente und überprüfen das Start- und Kühlsystem. Anschließend wird die Form eingeschmiert und wieder montiert. Auf diese Weise werden Störungen reduziert.",
         service5Title: "Herstellung von Geräten und Lackierungs- und Schwingungsgrundlagen",
         service5Description: "Entwicklung spezialisierter Geräte und Präzisionsbasen für Lokalisierungs- und Positionierungssysteme in industriellen Prozessen.",
-        service6Title: "Maschine für Mikro-Plasmaschweißen sowie TIG-Schweißen",
-        service6Description: "Dank unserer Technologie des Lichtbogenschweißens können wir unseren Kunden Kalt-Mikroschweißtechnik für alle Arten von Metall bieten. Auf diese Weise werden Verformungen oder Härteveränderungen der Form vermieden.",
+        service6Title: "Spritzgießen von Duroplasten",
+        service6Description: "Kompletter Spritzgießservice für Duroplasten mit strengster Qualitätskontrolle und Serienproduktionskapazität, spezialisiert auf Bauteile mit hoher thermischer und mechanischer Beständigkeit für verschiedene Industriebranchen.",
         
         // Machines Section
         machinesTitle: "Unsere Maschinen",
