@@ -287,7 +287,7 @@ const translations = {
         service3Description: "Aplicamos cambios de ingeniería a moldes y piezas en base a las necesidades de nuestros clientes. Gracias a nuestra área de diseño podemos generar propuestas 3D para analizar los cambios de ingeniería y posteriormente llevarlos a cabo en nuestros centros de maquinado.",
         service4Title: "Mantenimiento preventivo y correctivo",
         service4Description: "Desarmamos el molde y reemplazamos todos los elementos de sello, revisamos el sistema de refrigeración y sistema de botado, posteriormente lubricamos y armamos, esto ayuda a que los moldes de nuestros clientes tengan menos interrupciones productivas.",
-        service5Title: "Fabricación de dispositivos y bases para localizadores y ubicación",
+        service5Title: "Fabricación de dispositivos y bases para laqueado y vibración",
         service5Description: "Desarrollo de dispositivos especializados y bases de precisión para sistemas de localización y posicionamiento en procesos industriales.",
         service6Title: "Inyección de termofijos",
         service6Description: "Servicio completo de inyección de termofijos con control de calidad riguroso y capacidad de producción en serie, especializado en piezas de alta resistencia térmica y mecánica para diversos sectores industriales.",
@@ -733,3 +733,140 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+
+        class BrandCarousel {
+            constructor() {
+                this.track = document.querySelector('.carousel-track-brand');
+                this.slides = document.querySelectorAll('.brand-slide');
+                this.dots = document.querySelectorAll('.dot');
+                this.prevBtn = document.querySelector('.carousel-nav-brand.prev');
+                this.nextBtn = document.querySelector('.carousel-nav-brand.next');
+                
+                this.currentIndex = 0;
+                this.slidesToShow = this.getSlidesToShow();
+                this.totalSlides = this.slides.length;
+                this.maxIndex = Math.max(0, this.totalSlides - this.slidesToShow);
+                
+                this.init();
+            }
+
+            getSlidesToShow() {
+                const width = window.innerWidth;
+                if (width > 1200) return 7;
+                if (width > 992) return 6;
+                if (width > 768) return 5;
+                if (width > 576) return 4;
+                if (width > 400) return 3;
+                return 2;
+            }
+
+            init() {
+                this.updateCarousel();
+                this.bindEvents();
+                this.startAutoplay();
+            }
+
+            bindEvents() {
+                this.prevBtn?.addEventListener('click', () => this.prev());
+                this.nextBtn?.addEventListener('click', () => this.next());
+                
+                this.dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+
+                window.addEventListener('resize', () => {
+                    this.slidesToShow = this.getSlidesToShow();
+                    this.maxIndex = Math.max(0, this.totalSlides - this.slidesToShow);
+                    this.currentIndex = Math.min(this.currentIndex, this.maxIndex);
+                    this.updateCarousel();
+                });
+
+                // Touch events for mobile
+                let startX = 0;
+                let isDragging = false;
+
+                this.track.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                    this.pauseAutoplay();
+                });
+
+                this.track.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    e.preventDefault();
+                });
+
+                this.track.addEventListener('touchend', (e) => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    
+                    const endX = e.changedTouches[0].clientX;
+                    const diff = startX - endX;
+                    
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) {
+                            this.next();
+                        } else {
+                            this.prev();
+                        }
+                    }
+                    
+                    this.startAutoplay();
+                });
+            }
+
+            updateCarousel() {
+                const slideWidth = 100 / this.slidesToShow;
+                const translateX = -this.currentIndex * slideWidth;
+                
+                this.track.style.transform = `translateX(${translateX}%)`;
+                
+                // Update dots
+                this.dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === Math.floor(this.currentIndex / this.slidesToShow));
+                });
+            }
+
+            next() {
+                if (this.currentIndex < this.maxIndex) {
+                    this.currentIndex++;
+                } else {
+                    this.currentIndex = 0; // Loop back to start
+                }
+                this.updateCarousel();
+            }
+
+            prev() {
+                if (this.currentIndex > 0) {
+                    this.currentIndex--;
+                } else {
+                    this.currentIndex = this.maxIndex; // Loop to end
+                }
+                this.updateCarousel();
+            }
+
+            goToSlide(dotIndex) {
+                this.currentIndex = dotIndex * this.slidesToShow;
+                this.currentIndex = Math.min(this.currentIndex, this.maxIndex);
+                this.updateCarousel();
+            }
+
+            startAutoplay() {
+                this.pauseAutoplay();
+                this.autoplayInterval = setInterval(() => {
+                    this.next();
+                }, 4000);
+            }
+
+            pauseAutoplay() {
+                if (this.autoplayInterval) {
+                    clearInterval(this.autoplayInterval);
+                }
+            }
+        }
+
+        // Initialize carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new BrandCarousel();
+        });
