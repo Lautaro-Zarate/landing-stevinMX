@@ -218,166 +218,128 @@
     </section>
 
     <!-- Machines Section -->
-    <section id="tecnologia" class="machines-section">
-        <div class="machines-container">
-            <div class="machines-header">
-                <h1 class="machines-title" data-translate="machinesTitle">Nuestras Máquinas</h1>
-                <p class="machines-subtitle" data-translate="machinesSubtitle">
-                    Contamos con un moderno y equipado taller para así ofrecer resultados 
-                    eficientes y producir con los más altos niveles de calidad.
-                </p>
-            </div>
+    <div class="machine-container">
+        <h1 class="machine-title">Tecnología</h1>
+        
+        <div class="machine-grid">
+            <!-- Carousel 1: Máquinas CNC -->
+            <div class="machine-carousel-wrapper" data-carousel="0">
+                <div class="machine-carousel-container">
+                    <button class="machine-nav machine-prev" aria-label="Imagen anterior">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="machine-nav machine-next" aria-label="Siguiente imagen">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
 
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-track" id="carouselTrack">
-                        <!-- Slide 1 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name">HAAS TL2</h2>
-                                <div class="machine-specs">
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="specDiameter">Diámetro</span>
-                                        <span class="spec-value">406mm</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="specLength">Largo</span>
-                                        <span class="spec-value">737mm</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="machine-image">
-                                <img src="images/maquina1.png" alt="HAAS TL2 Machine">
-                            </div>
+                    <div class="machine-carousel-track">
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Máquina CNC en operación" class="machine-image">
                         </div>
-                        <!-- Slide 2 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name">MITSUBISHI SINK EDM EA8+C</h2>
-                                <div class="machine-specs">
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="spec-x">X</span>
-                                        <span class="spec-value">300mm</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="spec-y">Y</span>
-                                        <span class="spec-value">250mm</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="spec-z">Z</span>
-                                        <span class="spec-value">250mm</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="machine-image">
-                                <img src="images/maquina2.png" alt="HAAS TL2 Machine">
-                            </div>
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Panel de control CNC" class="machine-image">
                         </div>
-
-                        <!-- Slide 3 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name">HAAS TM3</h2>
-                                <div class="machine-specs">
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="specTableX">X</span>
-                                        <span class="spec-value">1016mm</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="specTableY">Y</span>
-                                        <span class="spec-value">508mm</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="specAxisZ">Z</span>
-                                        <span class="spec-value">406mm</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="machine-image">
-                                <img src="images/maquina3.png" alt="HAAS VF3 Machine">
-                            </div>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name" data-translate="specMachineName">FUERZA DE CIERRE 2500</h2>
-                            </div>
-                            <div class="machine-image">
-                                <img src="images/maquina4.png" alt="FUERZA DE CIERRE 2500">
-                            </div>
-                        </div>
-                        <!-- Slide 5 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name" data-translate="specMachineName2">FUERZA DE CIERRE 4500</h2>
-                            </div>
-                            <div class="machine-image">
-                                <img src="images/maquina5.png" alt="FUERZA DE CIERRE 4500">
-                            </div>
-                        </div>
-
-                        <!-- Slide 6 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name">AGIE</h2>
-                                <div class="machine-specs">
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="spec-x">X</span>
-                                        <span class="spec-value">320mm</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="spec-y">Y</span>
-                                        <span class="spec-value">220mm</span>
-                                    </div>
-                                    <div class="spec-item">
-                                        <span class="spec-label" data-translate="spec-z">Z</span>
-                                        <span class="spec-value">150mm</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="machine-image">
-                                <img src="images/maquina6.png" alt="AGIE">
-                            </div>
-                        </div>
-                        <!-- Slide 7 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name" data-translate="cncMachines">MAQUINAS CNC</h2>
-                            </div>
-                            <div class="machine-image">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="CNC Machines">
-                            </div>
-                        </div>
-                        <!-- Slide 8 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name" data-translate="injectionMachines">MAQUINAS DE INYECCION</h2>
-                            </div>
-                            <div class="machine-image">
-                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Q9z5jRX4nI4B35RqFnHVo5aqWyRsBU.png" alt="Injection Machines">
-                            </div>
-                        </div>
-                        <!-- Slide 9 -->
-                        <div class="carousel-slide">
-                            <div class="machine-info">
-                                <h2 class="machine-name" data-translate="opticalComparator">COMPARADOR OPTICO</h2>
-                            </div>
-                            <div class="machine-image">
-                                <img src="images/maquina9.png" alt="Optical Comparator">
-                            </div>
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Máquina CNC cortando metal" class="machine-image">
                         </div>
                     </div>
                 </div>
+                
+                <div class="machine-dots">
+                    <div class="machine-dot machine-active"></div>
+                    <div class="machine-dot"></div>
+                    <div class="machine-dot"></div>
+                </div>
+                
+                <div class="machine-caption">
+                    <h3>Máquinas CNC</h3>
+                </div>
+            </div>
 
-                <div class="carousel-controls">
-                    <button class="carousel-btn" id="prevBtn">‹</button>
-                    <div class="carousel-indicators" id="indicators"></div>
-                    <button class="carousel-btn" id="nextBtn">›</button>
+            <!-- Carousel 2: Máquinas de Inyección -->
+            <div class="machine-carousel-wrapper" data-carousel="1">
+                <div class="machine-carousel-container">
+                    <button class="machine-nav machine-prev" aria-label="Imagen anterior">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="machine-nav machine-next" aria-label="Siguiente imagen">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
+
+                    <div class="machine-carousel-track">
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Brazo robótico en máquina de inyección" class="machine-image">
+                        </div>
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Línea de producción de inyección" class="machine-image">
+                        </div>
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Sistema de control de inyección" class="machine-image">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="machine-dots">
+                    <div class="machine-dot machine-active"></div>
+                    <div class="machine-dot"></div>
+                    <div class="machine-dot"></div>
+                </div>
+                
+                <div class="machine-caption">
+                    <h3>Brazo para la extracción de piezas con robot en máquinas de inyección</h3>
+                </div>
+            </div>
+
+            <!-- Carousel 3: Comparador Óptico -->
+            <div class="machine-carousel-wrapper" data-carousel="2">
+                <div class="machine-carousel-container">
+                    <button class="machine-nav machine-prev" aria-label="Imagen anterior">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="machine-nav machine-next" aria-label="Siguiente imagen">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
+
+                    <div class="machine-carousel-track">
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Sistema de ventilación en banda transportadora" class="machine-image">
+                        </div>
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Equipo de ventilación industrial" class="machine-image">
+                        </div>
+                        <div class="machine-slide">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Sistema transportador con ventilación" class="machine-image">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="machine-dots">
+                    <div class="machine-dot machine-active"></div>
+                    <div class="machine-dot"></div>
+                    <div class="machine-dot"></div>
+                </div>
+                
+                <div class="machine-caption">
+                    <h3>Acondicionamiento de ventiladores en banda trasportadora</h3>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     
     <!-- Carousel Of Brands Section -->
     <div class="carousel-container-brand">
