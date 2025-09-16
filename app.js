@@ -14,20 +14,28 @@ function toggleService(header) {
     }
 }
 
-this.currentIndex = 0;
-this.totalSlides = this.slides.length;
-this.init();
+class MachineCarousel {
+            constructor(wrapper) {
+                this.wrapper = wrapper;
+                this.track = wrapper.querySelector('.machine-carousel-track');
+                this.slides = wrapper.querySelectorAll('.machine-slide');
+                this.dots = wrapper.querySelectorAll('.machine-dot');
+                this.prevBtn = wrapper.querySelector('.machine-nav.machine-prev');
+                this.nextBtn = wrapper.querySelector('.machine-nav.machine-next');
+                
+                this.currentIndex = 0;
+                this.totalSlides = this.slides.length;
+                
+                this.init();
+            }
 
-
-init()
-{
+            init() {
                 this.updateCarousel();
                 this.bindEvents();
                 this.startAutoplay();
             }
 
-            bindEvents() 
-            {
+            bindEvents() {
                 this.prevBtn?.addEventListener('click', () => {
                     this.pauseAutoplay();
                     this.prev();
@@ -47,18 +55,6 @@ init()
                         this.startAutoplay();
                     });
                 });
-
-                // Touch events for mobile
-                let startX = 0;
-                let isDragging = false;
-
-                this.track.addEventListener('touchstart', (e) => {
-                    startX = e.touches[0].clientX;
-                    isDragging = true;
-                        this.goToSlide(index);
-                        this.startAutoplay();
-                    });
-                };
 
                 // Touch events for mobile
                 let startX = 0;
@@ -96,9 +92,9 @@ init()
                 // Pause autoplay on hover
                 this.wrapper.addEventListener('mouseenter', () => this.pauseAutoplay());
                 this.wrapper.addEventListener('mouseleave', () => this.startAutoplay());
+            }
 
-            updateCarousel() 
-            {
+            updateCarousel() {
                 const translateX = -this.currentIndex * 100;
                 this.track.style.transform = `translateX(${translateX}%)`;
                 
@@ -108,45 +104,34 @@ init()
                 });
             }
 
-            next()
-            {
+            next() {
                 this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
                 this.updateCarousel();
             }
 
-            prev() 
-            {
+            prev() {
                 this.currentIndex = (this.currentIndex - 1 + this.totalSlides) % this.totalSlides;
                 this.updateCarousel();
             }
 
-            goToSlide(index) 
-            {
+            goToSlide(index) {
                 this.currentIndex = index;
                 this.updateCarousel();
             }
 
-            startAutoplay() 
-            {
+            startAutoplay() {
                 this.pauseAutoplay();
                 this.autoplayInterval = setInterval(() => {
                     this.next();
                 }, 5000);
             }
 
-            pauseAutoplay() 
-            {
+            pauseAutoplay() {
                 if (this.autoplayInterval) {
                     clearInterval(this.autoplayInterval);
                 }
             }
-        
-
-        // Initialize all carousels when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            const carouselWrappers = document.querySelectorAll('.machine-carousel-wrapper');
-            carouselWrappers.forEach(wrapper => {
-        },
+        }
 
         // Initialize all carousels when DOM is loaded
         document.addEventListener('DOMContentLoaded', () => {
@@ -155,6 +140,7 @@ init()
                 new MachineCarousel(wrapper);
             });
         });
+
 
 // Contact Form Handling
 function initContactForm() {
