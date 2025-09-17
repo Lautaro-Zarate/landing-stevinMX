@@ -664,7 +664,7 @@ function setLanguage(lang) {
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize carousel
-    new MachineCarousel();
+    // new MachineCarousel();
     
     // Initialize contact form
     initContactForm();
