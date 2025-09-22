@@ -740,6 +740,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* Machines Section */
+        .section-title-technologie{
+            font-size: clamp(40px, 5vw, 70px);
+            font-weight: 700;
+            letter-spacing: -0.003em;
+            color: var(--text-color) !important;
+            margin-bottom: 30px;
+            text-align: center;
+        }
         .machine-container {
             max-width: 1200px;
             margin: 0 auto;
@@ -1782,15 +1790,31 @@ h1,h2,h3,h4,h5,h6{
         max-height: 500px; /* Ajustable según cantidad de ítems */
         opacity: 1;
         transform: translateY(0);
-        padding: 20px 0;
+        padding: 50px 0;
     }
 
     .nav-links a {
         padding: 10px 0;
     }
-
-    .language-flags {
-        display: none; /* Opcional ocultarlas en móvil */
+    .language-flags{
+        position: absolute;
+        top: 100%;
+        right: 40%;
+        background: rgba(255, 255, 255, 0.95);
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+        gap: 10px;
+        padding: 0 10px;
+    }
+    .menu-toggle:checked ~ .language-flags {
+        opacity: 1;
+        transform: translateY(260px);
+        padding: 20px 0;
     }
     .logo {
         font-size: 14px;
