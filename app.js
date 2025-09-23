@@ -133,13 +133,13 @@ class MachineCarousel {
             }
         }
 
-        // Initialize all carousels when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
+// Initialize all carousels when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
             const carouselWrappers = document.querySelectorAll('.machine-carousel-wrapper');
             carouselWrappers.forEach(wrapper => {
                 new MachineCarousel(wrapper);
             });
-        });
+});
 
 
 // Contact Form Handling
@@ -337,7 +337,7 @@ const translations = {
         footerCompanyTitle: "Empresa",
         footerAbout: "Nosotros",
         footerMissionVision: "Misión y Visión",
-        footerMachines: "Nuestras Máquinas",
+        footerMachines: "Tecnología",
         footerContact: "Contacto",
         footerCopyright: "© 2025 STEVIN. Todos los derechos reservados.",
         footerMadeBy: "Hecho por",
@@ -490,7 +490,7 @@ const translations = {
         footerCompanyTitle: "Company",
         footerAbout: "About Us",
         footerMissionVision: "Mission and Vision",
-        footerMachines: "Our Machines",
+        footerMachines: "Technology",
         footerContact: "Contact",
         footerPrivacy: "Privacy Policy",
         footerCopyright: "© 2025 STEVIN. All rights reserved.",
@@ -643,7 +643,7 @@ const translations = {
         footerCompanyTitle: "Unternehmen",
         footerAbout: "Über uns",
         footerMissionVision: "Mission und Vision",
-        footerMachines: "Unsere Maschinen",
+        footerMachines: "Technologie",
         footerContact: "Kontakt",
         footerPrivacy: "DATENSCHUTZERKLÄRUNG",
         footerCopyright: "© 2025 STEVIN. Alle Rechte vorbehalten.",
