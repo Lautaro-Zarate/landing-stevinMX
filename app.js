@@ -147,34 +147,35 @@ function initContactForm() {
     const contactForm = document.getElementById('contactForm');
     if (!contactForm) return;
 
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData);
-        
-        // Simulate form submission
+    contactForm.addEventListener('submit', function () {
         const submitBtn = this.querySelector('.submit-btn');
+        if (!submitBtn) return;
+
+        // Cambiar estado del botón mientras se envía
         const originalText = submitBtn.textContent;
-        
         submitBtn.textContent = 'Enviando...';
         submitBtn.disabled = true;
-        
-        // Simulate API call
+
+        // Cuando Salesforce procese, redirigirá al retURL configurado
+        // (no es necesario resetear manualmente el form, porque habrá redirect)
         setTimeout(() => {
-            submitBtn.textContent = '¡Mensaje Enviado!';
-            submitBtn.style.background = 'linear-gradient(135deg, #43e97b, #38f9d7)';
-            
-            // Reset form
-            setTimeout(() => {
-                this.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-                submitBtn.style.background = 'linear-gradient(135deg, #0066cc, #00d4ff)';
-            }, 2000);
-        }, 1500);
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+        }, 3000);
     });
+
+    // Animaciones de focus/blur
+    const inputs = document.querySelectorAll('.form-input, .form-textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function () {
+            this.parentElement.style.transform = 'translateY(-2px)';
+        });
+
+        input.addEventListener('blur', function () {
+            this.parentElement.style.transform = 'translateY(0)';
+        });
+    });
+}
 
     // Add smooth focus animations
     const inputs = document.querySelectorAll('.form-input, .form-textarea');
@@ -187,7 +188,7 @@ function initContactForm() {
             this.parentElement.style.transform = 'translateY(0)';
         });
     });
-}
+
 
 // Smooth Scrolling for Navigation Links
 function initSmoothScrolling() {
